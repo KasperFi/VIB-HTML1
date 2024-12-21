@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento HTML -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Necesaria - Html Fest</title>
+    <style>
+        /* Estilos generales para el cuerpo de la página */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a; 
+            color: #fff; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estilo del encabezado (logo y navegación) */
+        header {
+            background: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+        header img {
+            height: 80px; 
+        }
+        /* Estilos para los enlaces del menú de navegación */
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px; 
+            margin-left: 25px; 
+            padding: 10px 20px; 
+            border: 2px solid transparent; 
+            border-radius: 5px; 
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+        }
+        nav a:hover {
+            color: #000; 
+            background-color: #ffcc00; 
+            border-color: #e6b800; 
+        }
+
+        /* Estilo para el contenedor principal del contenido */
+        .container {
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        /* Estilo para el título principal */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        /* Estilo para las secciones dentro del contenido */
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        section p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background: #1a1a1a; 
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            margin-top: auto; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con logo y enlaces de navegación -->
+    <header>
+        <img src="imagenes/logo.JPG" alt="Html Fest Logo"> 
+        <nav>
+            <a href="pagina-principal.html">Home</a>
+            <a href="entradas.html">Entradas</a>
+            <a href="Participantes.html">Participantes</a>
+            <a href="Ubicacion.html">Mapa</a>
+        </nav>
+    </header>
+
+    <!-- Contenedor del contenido principal -->
+    <div class="container">
+        <h1>Información Necesaria</h1>
+
+        <!-- Sección sobre objetos no permitidos -->
+        <section>
+            <h2>Objetos No Permitidos</h2>
+            <p>Por razones de seguridad, no se permite ingresar al festival con los siguientes objetos:</p>
+            <ul>
+                <li>Armas de cualquier tipo.</li>
+                <li>Botellas de vidrio o latas.</li>
+                <li>Sillas plegables o muebles.</li>
+                <li>Drones o dispositivos voladores.</li>
+                <li>Sustancias ilegales.</li>
+                <li>Sombrillas grandes o paraguas con punta.</li>
+            </ul>
+        </section>
+
+        <!-- Sección sobre las zonas para personas con movilidad reducida -->
+        <section>
+            <h2>Zonas para Personas con Movilidad Reducida</h2>
+            <p>El festival cuenta con áreas designadas para personas con movilidad reducida. Estas zonas están cerca de los escenarios principales y cuentan con accesos adaptados para sillas de ruedas.</p>
+            <p>Si necesitas asistencia, puedes dirigirte a nuestro equipo de soporte en la entrada principal.</p>
+        </section>
+
+        <!-- Sección sobre el acceso de menores acompañados de adultos -->
+        <section>
+            <h2>Acceso de Menores con Adultos</h2>
+            <p>Los menores de edad pueden asistir al festival, siempre y cuando estén acompañados por un adulto responsable. Será necesario presentar una identificación válida tanto del menor como del adulto.</p>
+        </section>
+
+        <!-- Sección sobre la política de agua permitida -->
+        <section>
+            <h2>¿Está Permitido Traer Agua?</h2>
+            <p>Sí, se permite ingresar con una botella de agua sellada por persona (máximo de 500 ml). También contamos con estaciones de hidratación dentro del recinto, donde podrás rellenar tus botellas.</p>
+        </section>
+
+        <!-- Sección sobre los servicios médicos disponibles -->
+        <section>
+            <h2>Servicios Médicos</h2>
+            <p>El festival cuenta con servicios médicos disponibles durante todo el evento. Si necesitas asistencia, dirígete a los puntos de atención médica señalizados en el mapa del evento.</p>
+            <p>También habrá personal capacitado para responder a emergencias en las zonas cercanas a los escenarios.</p>
+        </section>
+
+        <!-- Sección sobre la entrada física o online -->
+        <section>
+            <h2>¿Es Necesaria la Entrada Física o Online?</h2>
+            <p>Para ingresar al festival, es indispensable contar con tu entrada, ya sea en formato físico o digital. Asegúrate de que el código QR o código de barras sea legible para facilitar el acceso.</p>
+            <p>Si tienes problemas con tu entrada, consulta con nuestro personal en la taquilla de atención al cliente.</p>
+        </section>
+
+        <!-- Sección sobre el reingreso al recinto con pulseras -->
+        <section>
+            <h2>Reingreso al Recinto</h2>
+            <p>Se puede reingresar al recinto utilizando las pulseras que se entregan en la taquilla la primera vez que ingresas. Estas pulseras son personales e intransferibles, y deberás mantenerla puesta durante todo el evento.</p>
+        </section>
+    </div>
+
+    <!-- Pie de página con derechos reservados -->
+    <footer>
+        &copy; 2025 Html Fest. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

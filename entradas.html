@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Entradas - Html Fest</title>
+    <style>
+        /* Estilos generales del cuerpo */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+        }
+        /* Estilos del encabezado (logo y navegación) */
+        header {
+            background: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 80px; /* Tamaño del logo */
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        /* Estilos de los enlaces en la navegación */
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px; /* Tamaño de los enlaces */
+            margin-left: 25px;
+            padding: 10px 20px; 
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        nav a:hover {
+            color: #000;
+            background-color: #ffcc00; 
+            border-color: #e6b800;
+        }
+        /* Estilos de la sección principal (hero) */
+        .hero {
+            text-align: center;
+            background: #333; /* Fondo gris oscuro */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px #000;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 5px #000;
+        }
+        /* Estilos para la sección de tipos de entrada */
+        .ticket-info {
+            background: #222;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .ticket-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        /* Estilos para los cuadros de las entradas */
+        .ticket-info > div {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            vertical-align: top;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .ticket-info div img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .ticket-info div h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .ticket-info div p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        /* Estilos del botón de compra */
+        button {
+            background: #ffcc00;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+        }
+        button:hover {
+            background: #e6b800;
+        }
+        /* Estilos del pie de página */
+        footer {
+            background: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con logo y enlaces de navegación -->
+    <header>
+        <img src="imagenes/logo.JPG" alt="Html Fest Logo"> 
+        <nav>
+            <a href="pagina-principal.html">Home</a>
+            <a href="Participantes.html">Participantes</a>
+            <a href="informacion-general.html">Información general</a>
+            <a href="Ubicacion.html">Mapa</a>
+        </nav>
+    </header>
+
+    <!-- Sección principal (hero) con título y descripción -->
+    <section class="hero">
+        <h1>Compra tus Entradas</h1>
+        <p>Elige la entrada que mejor se adapte a tus gustos, ¡no te pierdas esta oportunidad!</p>
+    </section>
+
+    <!-- Sección de información de las entradas -->
+    <section class="ticket-info">
+        <h2>Tipos de entrada</h2>
+
+        <!-- Cuadro para la entrada básica -->
+        <div>
+            <h3>Entrada Básica</h3>
+            <img src="imagenes/entrada-estandar.JPG" alt="Entrada General">
+            <p>Con la entrada básica, podrás acceder a las zonas generales del evento, disfrutar de las actividades principales y asistir a charlas y espectáculos gratuitos.</p>
+            <button>Comprar Ahora</button>
+        </div>
+
+        <!-- Cuadro para la entrada premium -->
+        <div>
+            <h3>Entrada Premium</h3>
+            <img src="imagenes/entrada-premium.JPG" alt="Entrada VIP">
+            <p>La entrada premium te da acceso exclusivo a zonas premium, áreas reservadas, descuentos especiales y la posibilidad de conocer a los artistas.</p>
+            <button>Comprar Ahora</button>
+        </div>
+
+    </section>
+
+    <!-- Pie de página con derechos reservados -->
+    <footer>
+        &copy; 2025 Html Fest. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

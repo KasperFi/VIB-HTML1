@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participantes - Html Fest</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 80px; /* Tamaño del logo */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 25px;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        nav a:hover {
+            color: #000;
+            background-color: #ffcc00;
+            border-color: #e6b800;
+        }
+
+        /* Sección de participantes */
+        .participants {
+            padding: 50px 20px;
+            background: #1a1a1a;
+        }
+
+        .participants h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .band {
+            margin-bottom: 40px;
+            background: #333;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .band img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .band-info {
+            padding: 20px;
+        }
+
+        .band-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .band-info p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .band-info .members {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .member-card {
+            background: #444;
+            border-radius: 5px;
+            width: 22%;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .member-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .member-card h4 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .member-card p {
+            font-size: 1rem;
+        }
+
+        .member-card:hover {
+            transform: scale(1.05);
+            background-color: #555;
+        }
+
+        /* Discografía */
+        .albums img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            max-width: 1500px;
+        }
+
+        /* Pie de página */
+        footer {
+            background: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="imagenes/logo.JPG" alt="Html Fest Logo">
+        <nav>
+            <a href="pagina-principal.html">Home</a>
+            <a href="entradas.html">Entradas</a>
+            <a href="informacion-general.html">Información general</a>
+            <a href="Ubicacion.html">Mapa</a>
+        </nav>
+    </header>
+    
+    <!-- Sección de participantes -->
+    <section class="participants">
+        <h1>Participantes en Html Fest 2025</h1>
+
+        <!-- Slipknot -->
+        <div class="band">
+            <img src="imagenes/Slipknot-banner.JPG" alt="Slipknot">
+            <div class="band-info">
+                <h2>Miembros</h2>
+                <div class="members">
+                    <div class="member-card">
+                        <img src="imagenes/miembros/slipknot/corey.png" alt="Corey Taylor">
+                        <h4>Corey Taylor</h4>
+                        <p>Voz</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/slipknot/jimroot.png" alt="Jim Root">
+                        <h4>Jim Root</h4>
+                        <p>Guitarra</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/slipknot/mick.jpg" alt="Mick Thomson">
+                        <h4>Mick Thomson</h4>
+                        <p>Guitarra</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/slipknot/shawn.jpg" alt="Shawn Crahan">
+                        <h4>Shawn Crahan</h4>
+                        <p>Percusión</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/slipknot/aless.jpg" alt="Alessandro Venturella">
+                        <h4>Alessandro Venturella</h4>
+                        <p>Bajo</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/slipknot/eloy.jpg" alt="Eloy Casagrande">
+                        <h4>Eloy Casagrande</h4>
+                        <p>Batería</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/slipknot/sid.jpg" alt= "Sid Wilson">
+                        <h4>Sid Wilson</h4>
+                        <p>DJ</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/slipknot/tortilla.jpg" alt="Michael Pfaff">
+                        <h4>Michael Pfaff "Tortilla Man"</h4>
+                        <p>Percusión</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/slipknot/nuevo.jpg" alt="Teclado y mezclas">
+                        <h4>???? (no se sabe quien es aún)</h4>
+                        <p>Teclado y mezclas</p>
+                    </div>
+                </div>
+                <div class="albums">
+                    <h3>Discografía</h3>
+                    <img src="imagenes/Slipknot-discografia.JPG" alt="Discografía de Slipknot">
+                </div>
+            </div>
+        </div>
+
+        <!-- Periphery -->
+        <div class="band">
+            <img src="imagenes/periphery-banner.JPG" alt="Periphery">
+            <div class="band-info">
+                <h2>Miembros</h2>
+                <div class="members">
+                    <div class="member-card">
+                        <img src="imagenes/miembros/Periphery/misha.jpg" alt="Misha Mansoor">
+                        <h4>Misha Mansoor</h4>
+                        <p>Guitarra</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/Periphery/jake.jpg" alt="Jake Bowen">
+                        <h4>Jake Bowen</h4>
+                        <p>Guitarra</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/Periphery/mark.jpg" alt="Mark Holcomb">
+                        <h4>Mark Holcomb</h4>
+                        <p>Guitarra</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/Periphery/spencer.jpg" alt="Spencer Sotelo">
+                        <h4>Spencer Sotelo</h4>
+                        <p>Voz</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/Periphery/adam.jpg" alt="Adam 'Nolly' Getgood">
+                        <h4>Adam 'Nolly' Getgood</h4>
+                        <p>Bajo</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/Periphery/matt.jpg" alt="Matt Halpern">
+                        <h4>Matt Halpern</h4>
+                        <p>Batería</p>
+                    </div>
+                </div>
+                <div class="albums">
+                    <h3>Discografía</h3>
+                    <img src="imagenes/periphery-discografia.JPG" alt="Discografía de Periphery">
+                </div>
+            </div>
+        </div>
+
+        <!-- Metallica -->
+        <div class="band">
+            <img src="imagenes/metallica-banner.JPG" alt="Metallica">
+            <div class="band-info">
+                <h2>Miembros</h2>
+                <div class="members">
+                    <div class="member-card">
+                        <img src="imagenes/miembros/metallica/james.jpg" alt="James Hetfield">
+                        <h4>James Hetfield</h4>
+                        <p>Voz, Guitarra</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/metallica/lars.jpg" alt="Lars Ulrich">
+                        <h4>Lars Ulrich</h4>
+                        <p>Batería</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/metallica/kirk.jpg" alt="Kirk Hammett">
+                        <h4>Kirk Hammett</h4>
+                        <p>Guitarra</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/metallica/robert.jpg" alt="Robert Trujillo">
+                        <h4>Robert Trujillo</h4>
+                        <p>Bajo</p>
+                    </div>
+                </div>
+                <div class="albums">
+                    <h3>Discografía</h3>
+                    <img src="imagenes/metallica-disco1.JPG" alt="Discografía de Metallica1">
+                    <img src="imagenes/metallica-disco2.JPG" alt="Discografía de Metallica2">
+                </div>
+            </div>
+        </div>
+
+        <!-- Avenged Sevenfold -->
+        <div class="band">
+            <img src="imagenes/avenged-sevenfold-banner.JPG" alt="Avenged Sevenfold">
+            <div class="band-info">
+                <h2>Miembros</h2>
+                <div class="members">
+                    <div class="member-card">
+                        <img src="imagenes/miembros/A7x/matt.jpg" alt="M. Shadows">
+                        <h4>M. Shadows</h4>
+                        <p>Voz</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/A7x/zack.JPG" alt="Zacky Vengeance">
+                        <h4>Zacky Vengeance</h4>
+                        <p>Guitarra Ritmica</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/A7x/syn.JPG" alt="Synyster Gates">
+                        <h4>Synyster Gates</h4>
+                        <p>Guitarra Líder</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/A7x/jc.JPG" alt="Johnny Christ">
+                        <h4>Johnny Christ</h4>
+                        <p>Bajo</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="imagenes/miembros/A7x/brooks.JPG" alt="Brooks Wackerman">
+                        <h4>Brooks Wackerman</h4>
+                        <p>Batería</p>
+                    </div>
+                </div>
+                <div class="albums">
+                    <h3>Discografía</h3>
+                    <img src="imagenes/avenged-sevenfold-disco.JPG" alt="Discografía de Avenged Sevenfold">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        &copy; 2025 Html Fest. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
